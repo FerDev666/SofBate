@@ -9,7 +9,7 @@ class ProductsTableSeeder extends Seeder
     {
         Product::truncate();
         $faker = \Faker\Factory::create();
-        for($i=0; $i<50; $i++){
+        for($i=0; $i < 100000; $i++){
             Product::create([
                'title' => $faker->sentence,
                'description' => $faker->paragraph,
